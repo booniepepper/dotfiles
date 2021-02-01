@@ -6,31 +6,227 @@
 # License: GPLv3
 #=============================================================================
 
-# All SpaceVim option below [option] section
 [options]
-    # set spacevim theme. by default colorscheme layer is not loaded,
-    # if you want to use more colorscheme, please load the colorscheme
-    # layer
-    colorscheme = "gruvbox"
-    colorscheme_bg = "dark"
-    # Disable guicolors in basic mode, many terminal do not support 24bit
-    # true colors
-    enable_guicolors = true
-    # Disable statusline separator, if you want to use other value, please
-    # install nerd fonts
-    statusline_separator = "arrow"
-    statusline_iseparator = "arrow"
-    buffer_index_type = 4
-    enable_tabline_filetype_icon = true
-    enable_statusline_mode = false
-
-# Enable autocomplete layer
-[[layers]]
-name = 'autocomplete'
-auto_completion_return_key_behavior = "complete"
-auto_completion_tab_key_behavior = "smart"
+  colorscheme = "gruvbox"
+  colorscheme_bg = "dark"
+  enable_guicolors = true
+  statusline_separator = "arrow"
+  statusline_iseparator = "arrow"
+  buffer_index_type = 4
+  enable_tabline_filetype_icon = true
+  enable_statusline_mode = false
 
 [[layers]]
-name = 'shell'
-default_position = 'top'
-default_height = 30
+  name = 'autocomplete'
+  auto_completion_return_key_behavior = "complete"
+  auto_completion_tab_key_behavior = "smart"
+
+[[layers]]
+  name = 'shell'
+  default_position = 'top'
+  default_height = 30
+
+[[layers]]
+  name = 'format' # code autoformatting
+
+[[layers]]
+  name = 'fzf'
+
+[[layers]]
+  name = 'git'
+
+[[layers]]
+  name = 'github'
+
+[[layers]]
+  name = 'test'
+  # https://spacevim.org/layers/test/
+
+### Programming Language Support ###
+
+[[layers]]
+  name = 'lsp'
+  # https://spacevim.org/layers/language-server-protocol/
+
+# See layer list: https://spacevim.org/layers/
+
+#[[layers]]
+#  name = 'lang#WebAssembly'
+#[[layers]]
+#  name = 'lang#actionscript'
+[[layers]]
+  name = 'lang#agda'
+#[[layers]]
+#  name = 'lang#asciidoc'
+#[[layers]]
+#  name = 'lang#aspectj'
+[[layers]]
+  name = 'lang#assembly'
+#[[layers]]
+#  name = 'lang#autohotkey'
+#[[layers]]
+#  name = 'lang#batch'
+[[layers]]
+  name = 'lang#c'
+[[layers]]
+  name = 'lang#chapel'
+[[layers]]
+  name = 'lang#clojure'
+[[layers]]
+  name = 'lang#coffeescript'
+[[layers]]
+  name = 'lang#crystal'
+#[[layers]]
+#  name = 'lang#csharp'
+#[[layers]]
+#  name = 'lang#d'
+#[[layers]]
+#  name = 'lang#dart'
+#[[layers]]
+#  name = 'lang#dockerfile'
+[[layers]]
+  name = 'lang#eiffel'
+[[layers]]
+  name = 'lang#elixir'
+[[layers]]
+  name = 'lang#elm'
+[[layers]]
+  name = 'lang#erlang'
+[[layers]]
+  name = 'lang#extra'
+[[layers]]
+  name = 'lang#fortran'
+#[[layers]]
+#  name = 'lang#foxpro'
+[[layers]]
+  name = 'lang#fsharp'
+[[layers]]
+  name = 'lang#go'
+[[layers]]
+  name = 'lang#goby'
+[[layers]]
+  name = 'lang#gosu'
+[[layers]]
+  name = 'lang#graphql'
+[[layers]]
+  name = 'lang#groovy'
+[[layers]]
+  name = 'lang#hack'
+[[layers]]
+  name = 'lang#haskell'
+[[layers]]
+  name = 'lang#html'
+[[layers]]
+  name = 'lang#hy'
+[[layers]]
+  name = 'lang#idris'
+[[layers]]
+  name = 'lang#io'
+[[layers]]
+  name = 'lang#ipynb'
+[[layers]]
+  name = 'lang#j'
+[[layers]]
+  name = 'lang#janet'
+[[layers]]
+  name = 'lang#java'
+[[layers]]
+  name = 'lang#javascript'
+[[layers]]
+  name = 'julia'
+  # https://github.com/julia-vscode/LanguageServer.jl/wiki/Vim-and-Neovim
+[[layers]]
+  name = 'lang#kotlin'
+[[layers]]
+  name = 'lang#lasso'
+[[layers]]
+  name = 'lang#latex'
+[[layers]]
+  name = 'lang#lisp'
+[[layers]]
+  name = 'lang#livescript'
+[[layers]]
+  name = 'lang#lua'
+[[layers]]
+  name = 'lang#markdown'
+#[[layers]]
+#  name = 'lang#matlab'
+[[layers]]
+  name = 'lang#moonscript'
+[[layers]]
+  name = 'lang#nim'
+[[layers]]
+  name = 'lang#nix'
+[[layers]]
+  name = 'lang#ocaml'
+[[layers]]
+  name = 'lang#pact'
+[[layers]]
+  name = 'lang#pascal'
+[[layers]]
+  name = 'lang#perl'
+[[layers]]
+  name = 'lang#php'
+[[layers]]
+  name = 'lang#plantuml'
+[[layers]]
+  name = 'lang#pony'
+[[layers]]
+  name = 'lang#povray'
+[[layers]]
+  name = 'lang#powershell'
+[[layers]]
+  name = 'lang#processing'
+[[layers]]
+  name = 'lang#prolog'
+#[[layers]]
+#  name = 'lang#puppet'
+[[layers]]
+  name = 'lang#purescript'
+[[layers]]
+  name = 'lang#python'
+[[layers]]
+  name = 'lang#r'
+[[layers]]
+  name = 'lang#racket'
+[[layers]]
+  name = 'lang#red'
+[[layers]]
+  name = 'lang#ring'
+[[layers]]
+  name = 'lang#ruby'
+[[layers]]
+  name = 'lang#rust'
+[[layers]]
+  name = 'lang#scala'
+[[layers]]
+  name = 'lang#scheme'
+[[layers]]
+  name = 'lang#sh'
+[[layers]]
+  name = 'lang#slim'
+[[layers]]
+  name = 'lang#sml'
+#[[layers]]
+#  name = 'lang#swift'
+[[layers]]
+  name = 'lang#tcl'
+[[layers]]
+  name = 'lang#toml'
+[[layers]]
+  name = 'lang#typescript'
+[[layers]]
+  name = 'lang#v'
+#[[layers]]
+#  name = 'lang#vbnet'
+[[layers]]
+  name = 'lang#vim'
+#[[layers]]
+#  name = 'lang#vue'
+#[[layers]]
+#  name = 'lang#wolfram'
+[[layers]]
+  name = 'lang#xml'
+[[layers]]
+  name = 'lang#zig'
+
