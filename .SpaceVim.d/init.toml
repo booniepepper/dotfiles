@@ -7,6 +7,7 @@
 #=============================================================================
 
 [options]
+  automatic_update = true
   colorscheme = "gruvbox"
   colorscheme_bg = "dark"
   enable_guicolors = true
@@ -18,6 +19,7 @@
 
 [[layers]]
   name = 'autocomplete'
+  autocomplete_method = 'coc'
   auto_completion_return_key_behavior = "complete"
   auto_completion_tab_key_behavior = "smart"
 
@@ -122,10 +124,10 @@
   name = 'lang#idris'
 [[layers]]
   name = 'lang#io'
-[[layers]]
-  name = 'lang#ipynb'
-[[layers]]
-  name = 'lang#j'
+#[[layers]]
+#  name = 'lang#ipynb'
+#[layers]]
+#  name = 'lang#j'
 [[layers]]
   name = 'lang#janet'
 [[layers]]
@@ -147,14 +149,14 @@
   name = 'lang#livescript'
 [[layers]]
   name = 'lang#lua'
-[[layers]]
-  name = 'lang#markdown'
+#[[layers]]
+#  name = 'lang#markdown'
 #[[layers]]
 #  name = 'lang#matlab'
 [[layers]]
   name = 'lang#moonscript'
-[[layers]]
-  name = 'lang#nim'
+#[[layers]]
+#  name = 'lang#nim'
 [[layers]]
   name = 'lang#nix'
 [[layers]]
